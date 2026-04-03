@@ -1,4 +1,4 @@
-<template><div class="login-container"><div class="login-background"></div><div class="login-content"><div class="login-card"><div class="login-header"><h1 class="login-title">西餐边角料创意系统</h1><p class="login-subtitle">Admin Panel</p></div><el-form
+<template><div class="login-container"><div class="login-background"></div><div class="login-content"><div class="login-card"><div class="login-header"><h1 class="login-title">中点边角料创意系统</h1><p class="login-subtitle">Admin Panel</p></div><el-form
           ref="formRef"
           :model="form"
           :rules="rules"

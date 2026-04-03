@@ -1,4 +1,4 @@
-<template><div class="app-container"><router-view v-if="!isLoggedIn"></router-view><el-container v-else class="main-container"><el-aside :width="isCollapsed ? '80px' : '240px'" :class="['sidebar', { 'mobile-open': showMobileMenu && isMobile }]"><div class="sidebar-header"><div class="logo-container"><div class="logo-icon">🍽️</div><div class="logo-text" v-show="!isCollapsed"><h1 class="logo-title">西餐边角料</h1><p class="logo-subtitle">创意系统</p></div></div><el-button 
+<template><div class="app-container"><router-view v-if="!isLoggedIn"></router-view><el-container v-else class="main-container"><el-aside :width="isCollapsed ? '80px' : '240px'" :class="['sidebar', { 'mobile-open': showMobileMenu && isMobile }]"><div class="sidebar-header"><div class="logo-container"><div class="logo-icon">🍽️</div><div class="logo-text" v-show="!isCollapsed"><h1 class="logo-title">中点边角料</h1><p class="logo-subtitle">创意系统</p></div></div><el-button 
             type="text" 
             class="collapse-button" 
             @click="toggleCollapse"
