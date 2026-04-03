@@ -1,4 +1,4 @@
-<template><div class="idea-management"><div class="management-header"><div class="header-content"><h1 class="page-title">创意管理</h1><p class="page-subtitle">管理您的西餐边角料创意</p></div><div class="header-actions"><el-input
+<template><div class="idea-management"><div class="management-header"><div class="header-content"><h1 class="page-title">创意管理</h1><p class="page-subtitle">管理您的中式面点边角料创意</p></div><div class="header-actions"><el-input
             v-model="searchQuery"
             placeholder="搜索创意标题"
             clearable

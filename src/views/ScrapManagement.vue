@@ -1,4 +1,4 @@
-<template><div class="scrap-management"><div class="management-header"><div class="header-content"><h1 class="page-title">边角料管理</h1><p class="page-subtitle">管理您的西餐边角料库存</p></div><div class="header-actions"><el-input
+<template><div class="scrap-management"><div class="management-header"><div class="header-content"><h1 class="page-title">边角料管理</h1><p class="page-subtitle">管理您的中式面点边角料库存</p></div><div class="header-actions"><el-input
             v-model="searchQuery"
             placeholder="搜索边角料名称或类型"
             clearable
@@ -57,7 +57,7 @@
               placeholder="请选择类型"
               size="large"
               class="form-select"
-            ><el-option label="肉类" value="肉类"></el-option><el-option label="蔬菜" value="蔬菜"></el-option><el-option label="主食" value="主食"></el-option><el-option label="乳制品" value="乳制品"></el-option><el-option label="其他" value="其他"></el-option></el-select></el-form-item><el-form-item label="数量" prop="quantity"><el-input-number
+            ><el-option label="面制品" value="面制品"></el-option><el-option label="杂粮" value="杂粮"></el-option><el-option label="馅料" value="馅料"></el-option><el-option label="辅料" value="辅料"></el-option><el-option label="其他" value="其他"></el-option></el-select></el-form-item><el-form-item label="数量" prop="quantity"><el-input-number
               v-model="form.quantity"
               :min="1"
               :precision="0"
@@ -92,10 +92,10 @@ const scrapStore = useScrapStore()
 
 const getTypeTagType = (type) => {
   const typeMap = {
-    '肉类': 'danger',
-    '蔬菜': 'success',
-    '主食': 'warning',
-    '乳制品': 'info',
+    '面制品': 'primary',
+    '杂粮': 'success',
+    '馅料': 'warning',
+    '辅料': 'info',
     '其他': 'info'
   }
   return typeMap[type] || 'info'
